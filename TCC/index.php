@@ -61,7 +61,7 @@
                   <ul class="dropdown__menu">
                      <!-- Subitens do menu suspenso 2 -->
                      <li><a href="login/login.php" class="dropdown__link"><i class="ri-user-line"></i> Login</a></li>
-                     <li><a href="politica.php" class="dropdown__link"><i class="ri-lock-line"></i> Política e Privacidade</a></li>
+                     <li><a href="#" class="dropdown__link" id="open-modal"><i class="ri-lock-line"></i> Política e Privacidade</a></li>
                   </ul>
                </li>
             </ul>

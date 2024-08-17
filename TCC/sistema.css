@@ -11,7 +11,7 @@
   --black-color: #D9965B;
   --black-color-light: #B78348;
   --black-color-lighten: #B78348;
-  --white-color: #73321A;
+  --white-color: #73321a;
   --body-color: #F8F7F2;
 
   /*========== Font and typography ==========*/
@@ -364,270 +364,57 @@ a {
 
 
 
-/* CARROCEL DE IMAGENS */
-
-img{
-  vertical-align: middle;
-  border-radius: 30px;
-}
-
-.slideshow-container{
-  max-width: 60%;
-  position: relative;
-  margin: auto;
-}
-
-.prev, .next{
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next{
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-
-.dot{
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: backgrond-color 0.6s ease;
-}
-
-.active, dot:hover{
-  background-color: #717171;
-}
-
-.fade{
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade{
-  from {opacity: .4;}
-  to{opacity: 1;}
-}
-
-@keyframes fade{
-  from{opacity: .4;}
-  to{opacity: 1;}
-}
-
-/* Responsive adjustments */
-@media only screen and (max-width: 600px) {
-  .slideshow-container {
-    max-width: 95%; /* Ajustar para 100% para ocupar a largura total da tela */
-  }
-  .prev, .next {
-    font-size: 12px; /* Ajustar o tamanho da fonte dos botões de navegação */
-    padding: 12px; /* Ajustar o padding dos botões de navegação */
-  }
-  .dot {
-    height: 12px;
-    width: 12px;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .prev, .next {
-    font-size: 10px;
-    padding: 8px;
-  }
-  .dot {
-    height: 8px;
-    width: 8px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* BARRA DE PESQUISA */
-
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-input[type="text"] {
-  padding: 12px 15px;
-  width: 40%;
-  border: 1px solid #73321a;
-  border-radius: 20px 0 0 20px;
-  font-size: 20px;
-  font-family: 'Open Sans', sans-serif; /* Nova fonte */
-  outline: none;
-  height: 76px;
-  background-color: #fff;
-  margin-right: -5px;
-}
-
-button.search-button {
-  padding: 12px 20px;
-  background-color: #73321a;
-  color: white;
-  border: none;
-  border-radius: 0 20px 20px 0;
-  cursor: pointer;
-  font-size: 16px;
-  height: 76px;
-  transition: background-color 3s;
-}
-
-button.search-button:hover {
-  background-color: #45a049;
-}
-
-/* Ajuste do ícone */
-button.search-button i {
-  font-size: 30px; /* Tamanho do ícone */
-  height: 0; /* Altura igual à altura do botão */
-}
-
-/* Responsividade */
-@media screen and (max-width: 600px) {
-  input[type="text"] {
-    width: 80%;
-    height: 45px;
-  }
-  button.search-button{
-    height: 45px;
-  }
-  button.search-button i{
-    font-size: 15px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RECEITA TEXTO */
-
-.receita-div{
-  text-align: center;
-}
-
-.receita-text{
-  font-family: 'Pacifico', cursive; /* Aplica a fonte Lobster ao texto do ícone */
-  font-size: 2.5rem; /* Tamanho da fonte */
-  color: #73321A;
-}
-
-
-
-
-
-
 
 
 
 /* Estilo do Modal */
 .modal {
-  display: none; /* Oculta o modal por padrão */
-  position: fixed;
-  z-index: 1; /* Fica sobre outros elementos */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto; /* Adiciona rolagem se necessário */
-  background-color: rgb(0,0,0); /* Cor de fundo */
-  background-color: rgba(0,0,0,0.4); /* Cor de fundo com opacidade */
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    z-index: 1; /* Fica sobre outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adiciona rolagem se necessário */
+    background-color: rgb(0,0,0); /* Cor de fundo */
+    background-color: rgba(0,0,0,0.4); /* Cor de fundo com opacidade */
 }
 
 /* Conteúdo do Modal */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Largura do modal */
-  border-radius: 15px;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    border-radius: 15px;
 }
 
 .modal-content h2{
-  text-align: center;
-  font-family: 'Pacifico', cursive; /* Aplica a fonte Lobster ao texto do ícone */
-  font-size: 2rem; /* Tamanho da fonte */
-  color: #D9965B;
+    text-align: center;
+    font-family: 'Pacifico', cursive; /* Aplica a fonte Lobster ao texto do ícone */
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #D9965B;
 }
 
 .modal-content hr{
-  background-color: #73321A;
+    background-color: #73321A;
 }
 
 /* Botão de fechar */
 .modal-close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .modal-close:hover,
 .modal-close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -643,115 +430,121 @@ button.search-button i {
 
 
 
-/* TELA DE RECEITAS */
 
 
-.receitas {
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste o valor aqui para diminuir os cards */
-  grid-gap: 20px 40px;
+
+.bem_vindo {
+  padding: 20px; 
+  margin: 20px auto; 
+  width: 80%; 
+  max-width: 600px; 
+  text-align: center; 
 }
 
-.food-items {
-  display: grid;
-  position: relative;
-  grid-template-rows: auto 1fr;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin: 0 20px;
+.bem_vindo h1 {
+  font-family: 'Arial', sans-serif; 
+  font-size: 2rem; 
+  color: #333; 
+  margin: 0; 
+  padding: 0; 
 }
 
-.food-items img {
-  position: relative;
-  width: 100%;
-  border-radius: 15px 15px 0 0;
-}
 
-.details {
-  padding: 20px 10px;
-  display: grid;
-  grid-template-rows: auto 1fr 50px;
-  grid-row-gap: 15px;
-}
-
-.details-sub {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.details-sub > h5 {
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.price {
-  text-align: right;
-}
-
-.details > p {
-  color: #6f6f6f;
-  font-size: 15px;
-  line-height: 28px;
-  font-weight: 400;
-  align-self: stretch;
-}
-
-/* Estilo do botão atualizado */
-.details > button {
-  display: inline-block;
-  padding: 15px 20px;
-  background: #D9965B;
-  color: #73321A;
-  font-size: 18px; /* Aumentei o tamanho da fonte */
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase; /* Texto em caixa alta */
-  border-radius: 15px;
-  transition: all .50s ease;
-  border: none;
-  width: 180px;
-}
-
-.details > button:hover {
-  background: #B78348;
-  color: #73321A;
+.bem_vindo h1 span {
+  font-weight: bold; 
+  color: #ff3d00; 
 }
 
 
 
-/* Botão de ver mais */
 
 
-.container_botao{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0; /* Margem superior e inferior */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table {
+  width: 80%; 
+  margin: 0 auto; 
+  border-collapse: collapse; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.ver_mais {
-  display: inline-block;
-  padding: 15px 20px;
-  background: #D9965B;
-  color: #73321A;
-  font-size: 20px; /* Aumentei o tamanho da fonte */
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase; /* Texto em caixa alta */
-  border-radius: 15px;
-  transition: all .50s ease;
-  border: none;
-  width: 180px;
-  text-align: center; /* Centraliza o texto dentro do botão */
-  margin: 20px auto; /* Centraliza o botão horizontalmente */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao botão */
+.table thead {
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
-.ver_mais:hover {
-  background: #B78348;
-  color: #73321A;
-  transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Aumenta a sombra ao passar o mouse */
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table th {
+  font-weight: var(--font-semi-bold);
+}
+
+.table td {
+  font-size: 0.875rem;
+}
+
+.table {
+  width: 80%; 
+  margin: 0 auto; 
+  border-collapse: collapse; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.table thead {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table th {
+  font-weight: var(--font-semi-bold);
+}
+
+.table td {
+  font-size: 0.875rem;
+}
