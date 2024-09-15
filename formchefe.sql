@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 02/09/2024 às 02:26
+-- Tempo de geração: 15/09/2024 às 22:07
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -41,7 +41,7 @@ CREATE TABLE `products` (
 --
 
 CREATE TABLE `usuarios` (
-  `email` varchar(110) NOT NULL,
+  `id` int(255) NOT NULL,
   `fullnome` varchar(110) NOT NULL,
   `usuario` varchar(45) NOT NULL,
   `senha` varchar(45) NOT NULL
@@ -51,8 +51,8 @@ CREATE TABLE `usuarios` (
 -- Despejando dados para a tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`email`, `fullnome`, `usuario`, `senha`) VALUES
-('q', 'q', 'q', 'q');
+INSERT INTO `usuarios` (`id`, `fullnome`, `usuario`, `senha`) VALUES
+(6, 'q', 'q', 'q');
 
 --
 -- Índices para tabelas despejadas
@@ -68,7 +68,8 @@ ALTER TABLE `products`
 -- Índices de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`email`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
@@ -78,7 +79,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT de tabela `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
