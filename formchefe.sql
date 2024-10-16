@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 10/10/2024 às 02:41
+-- Tempo de geração: 17/10/2024 às 00:57
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -37,27 +37,6 @@ CREATE TABLE `products` (
   `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `usuarios`
---
-
-CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
-  `fullnome` varchar(110) NOT NULL,
-  `usuario` varchar(45) NOT NULL,
-  `senha` varchar(45) NOT NULL,
-  `adm` varchar(3) NOT NULL DEFAULT 'Não'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Despejando dados para a tabela `usuarios`
---
-
-INSERT INTO `usuarios` (`id`, `fullnome`, `usuario`, `senha`, `adm`) VALUES
-(1, 'q', 'q', 'q', 'Sim');
-
 --
 -- Índices para tabelas despejadas
 --
@@ -70,13 +49,6 @@ ALTER TABLE `products`
   ADD KEY `idx_user_id` (`user_id`);
 
 --
--- Índices de tabela `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id` (`id`);
-
---
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -84,13 +56,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
-
---
--- AUTO_INCREMENT de tabela `usuarios`
---
-ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 
 --
 -- Restrições para tabelas despejadas
